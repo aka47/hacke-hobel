@@ -9,75 +9,64 @@
 }
 
 #steuerung {
-  background-color: #000000; no-repeat; left top;
-  height:30px;
-  border:1px;
-  border-style:solid;
-  border-color:black;
-  padding-left: 10px;
+  margin-left: 70px;
+  position: absolute;
 }
 
 #steuerung a {
-  color:#FFFFFF;
+  color: #abcc60;
   text-align:right;
-  font-size:25px;
-  padding: 0 0 0 20px;
+  font-size:20px;
+  padding: 5px;
+  text-decoration: none;
+  float: left;
+  clear: both;
 }
 
 #inhalt {
   background-color:#FFFFFF;
-  min-height:450px;
-  padding-left:10px;
+  min-height: 450px;
+  margin-left: 340px;
   line-height: 1.4;
+  display: inline-block;
+  min-width: 713px;
 }
+
 #inhalt p, #inhalt ol{
   max-width:750px;
 }
-#inhalt h1 {
-  
-  color:#000000;
-  font-size:25px;
-  padding:20px 0 20px 20px;
 
-  
+#inhalt h1 {
+  color: #abcc60;
+  font-size:20px;
+  margin-bottom: 10px;
 }
 #inhalt p {
-  
   color:#000000;
   text-align:left;
   font-size:15px;
-  padding:0 0 10px 20px ;
-  
+  padding:0 0 10px 0px ;
 }
+
 #inhalt a {
-  
   color:#000000;
   text-align:left;
   font-size:15px;
-  padding:0 0 20px 20px ;
-  
 }
 
-
-#schatten {
-
-   
-background-color:#000000; no-repeat; left top;
-  height:20px;
-  border:1px;
-  border-style:solid;
-  border-color:black;
+#footer {
+  background:url(/bilder/blumen.png) no-repeat 300px top;
 }
 
-#schatten a {
-  color:#FFFFFF;
-  text-align:right;
-  font-size:15px;
-  padding:0 0 0 20px;
+#footer a {
+  color: #abcc60;
+  font-size: 10px;
+  padding:0 0 0 75px;
 }
 
 html, body {
   font: 15px Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 body {
@@ -86,4 +75,19 @@ body {
 
 ul{
     list-style-type:square;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -22px; /* the bottom margin is the negative value of the footer's height */
+}
+
+#footer, .push {
+  height: 22px; /* .push must be the same height as .footer */
 }
