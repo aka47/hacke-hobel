@@ -54,6 +54,15 @@
   font-size:15px;
 }
 
+div.gallery{ 
+  margin: 20px 80px 50px 0;
+}
+
+a.fancybox img {
+  max-height: 180px;
+  margin: 1px 3px;
+}
+
 #footer {
   background:url(/bilder/blumen.png) no-repeat 300px top;
 }

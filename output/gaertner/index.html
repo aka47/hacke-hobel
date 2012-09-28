@@ -22,7 +22,20 @@
       </div>
 
       <div id="inhalt" data-id='inhalt'>
-        <h1>Gartenbau</h1>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="/fb/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fb/jquery.fancybox.pack.js?v=2.1.0"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none'
+        });
+      });
+    </script>
+
+
+<h1>Gartenbau</h1>
 
 <p>
     Im Bereich Gartenbau bietet Hack & Hobel folgende Leistung an:
@@ -44,7 +57,9 @@
   <li>Regenwassernutzung</li>
 </ul>
 <br />
-<img src="/bilder/2003_felix_gartenbau.jpg" width="" height="" border="0" style="" alt="Lichtschacht" />
+<div class='gallery'>
+  <a class='fancybox' rel='gaertner' href='/bilder/gaertner/garteinteich.jpg'><img src='/bilder/gaertner/thumbs/garteinteich.jpg' alt='' /></a><a class='fancybox' rel='gaertner' href='/bilder/gaertner/garten-weg-mit-sandsteinmauer.jpg'><img src='/bilder/gaertner/thumbs/garten-weg-mit-sandsteinmauer.jpg' alt='' /></a><a class='fancybox' rel='gaertner' href='/bilder/gaertner/gartenteich2.jpg'><img src='/bilder/gaertner/thumbs/gartenteich2.jpg' alt='' /></a>
+</div>
       </div>
       <div class="push"></div>
     </div>
